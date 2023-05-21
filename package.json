@@ -1,0 +1,15 @@
+{
+  "name": "@satoshilira/smart-contracts",
+  "version": "1.0.0",
+  "repository": "git@github.com:satoshilira/smart-contracts.git",
+  "author": "fredev <fredev@satoshilira.io>",
+  "license": "GPLV3",
+  "scripts": {
+    "deploy:mock-tokens": "pnpm --filter @satoshilira/mock-tokens deploy:arbitrumGoerli",
+    "deploy:sacrifice": "pnpm --filter @satoshilira/sacrifice deploy:arbitrumGoerli",
+    "deploy:lira": "pnpm --filter @satoshilira/lira deploy:arbitrumGoerli",
+
+    "test:sacrifice": "pnpm --filter @satoshilira/sacrifice test",
+    "test:mock-tokens": "pnpm --filter @satoshilira/mock-tokens test"
+  }
+}
