@@ -1,0 +1,1 @@
+describe('MockWBTC', function () {});
