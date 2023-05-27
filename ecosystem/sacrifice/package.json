@@ -1,0 +1,40 @@
+{
+  "name": "@satoshilira/sacrifice",
+  "version": "1.0.0-beta.1",
+  "license": "GPLV3",
+  "private": true,
+  "scripts": {
+    "compile": "hardhat compile",
+    "deploy:ganache": "hardhat deploy --network ganache",
+    "deploy:arbitrumGoerli": "hardhat deploy --network arbitrumGoerli",
+    "deploy:arbitrum": "hardhat deploy --network arbitrum",
+    "test": "hardhat test"
+  },
+  "devDependencies": {
+    "@ethersproject/providers": "^5.7.2",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.8",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@0.3.0-beta.13",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@openzeppelin/contracts": "^4.8.3",
+    "@satoshilira/mock-tokens": "workspace:*",
+    "@satoshilira/satoshi-lira": "workspace:*",
+    "@typechain/ethers-v5": "^10.2.1",
+    "@typechain/hardhat": "^6.1.6",
+    "@types/chai": "^4.3.5",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^20.1.4",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "ethereum-waffle": "^4.0.10",
+    "ethers": "^5.3.0",
+    "hardhat": "^2.14.0",
+    "hardhat-deploy": "^0.11.29",
+    "hardhat-gas-reporter": "^1.0.9",
+    "solidity-coverage": "^0.8.2",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.1.1",
+    "typescript": "^5.0.4"
+  }
+}
