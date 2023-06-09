@@ -6,7 +6,6 @@
   "scripts": {
     "compile": "hardhat compile",
     "deploy:arbitrumGoerli": "hardhat deploy --network arbitrumGoerli",
-    "deploy:arbitrum": "hardhat deploy --network arbitrum",
     "test": "hardhat test"
   },
   "devDependencies": {

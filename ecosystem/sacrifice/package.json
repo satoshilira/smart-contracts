@@ -7,7 +7,6 @@
     "compile": "hardhat compile",
     "deploy:ganache": "hardhat deploy --network ganache",
     "deploy:arbitrumGoerli": "hardhat deploy --network arbitrumGoerli",
-    "deploy:arbitrum": "hardhat deploy --network arbitrum",
     "test": "hardhat test"
   },
   "devDependencies": {
