@@ -180,12 +180,12 @@ importers:
       '@openzeppelin/contracts':
         specifier: ^4.8.3
         version: 4.8.3
+      '@satoshilira/lira':
+        specifier: workspace:*
+        version: link:../lira
       '@satoshilira/mock-tokens':
         specifier: workspace:*
         version: link:../mock-tokens
-      '@satoshilira/satoshi-lira':
-        specifier: workspace:*
-        version: link:../lira
       '@typechain/ethers-v5':
         specifier: ^10.2.1
         version: 10.2.1(@ethersproject/abi@5.7.0)(@ethersproject/providers@5.7.2)(ethers@5.3.0)(typechain@8.1.1)(typescript@5.0.4)
@@ -309,6 +309,8 @@ importers:
       typescript:
         specifier: ^5.0.4
         version: 5.0.4
+
+  packages/deployents: {}
 
 packages:
 

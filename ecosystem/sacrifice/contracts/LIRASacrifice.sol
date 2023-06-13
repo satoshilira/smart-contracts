@@ -89,14 +89,14 @@ contract LIRASacrifice is Context {
     }
 
     struct SacrificeRound {
-        uint bonus;
+        uint bonus; // TODO: rename to intrinsic value
         uint sacrified;
         uint start;
         uint end;
     }
 
     Sacrifice[] private _sacrifices;
-    SacrificeRound[] private _rounds;
+    SacrificeRound[] public _rounds;
 
     // reward token of the ritual
     address public sacrifiedToken;
@@ -177,7 +177,7 @@ contract LIRASacrifice is Context {
 
         IERC20(sacrifiedToken).transferFrom(_msgSender(), address(this), amount_);
 
-        _sacrifices.push(Sacrifice(_msgSender(), amount_.add(amount_.div(100).mul(round().bonus)).mul(10 ** 8), false));
+        _sacrifices.push(Sacrifice(_msgSender(), amount_.mul(10).div(round().bonus).mul(10 ** 8), false));
 
         for (uint i = 0; i < _rounds.length; i++) {
             if (block.timestamp >= _rounds[i].start && block.timestamp <= _rounds[i].end) {
